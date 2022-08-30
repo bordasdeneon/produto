@@ -236,7 +236,18 @@ tr {
     border-radius: 6px;
     background: linear-gradient(to bottom,#FF5F15   0%,#FF5F15  100%);
     box-shadow: 0 1px 1px 0 rgba(0,0,0,.5);
-    text-decoration: none!important
+    text-decoration: none!important;
+	animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		box-shadow: 0 0 0 0 #FF5F15;
+	}
+
+	100% {
+		box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+	}
 }
 
 .span-btn {
